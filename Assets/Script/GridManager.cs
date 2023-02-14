@@ -4,35 +4,35 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    [SerializeField] private int width, height;
+    [SerializeField] private int width, height;//camera pov field
 
-    [SerializeField] private Tile tilePrefabs;
+    [SerializeField] private Tile tilePrefabs;//variable for tile holder
 
-    [SerializeField] private Transform cam;
+    [SerializeField] private Transform cam;//variable for camera
 
-    private Dictionary<Vector2, Tile> tiles;
-    private void Start()
+    private Dictionary<Vector2, Tile> tiles;//gets tile x and y
+    private void Start()//activate on start
     {
         GenerateGrid();
     }
-    void GenerateGrid()
+    void GenerateGrid()//build the grid
     {
-        tiles = new Dictionary<Vector2, Tile>();
+        tiles = new Dictionary<Vector2, Tile>();//initialize tiles
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
-            {
+            {//create a tile grid with x width and y height
                 var spawnedTile = Instantiate(tilePrefabs, new Vector3(x,y), Quaternion.identity);
                 spawnedTile.name = $"Tile {x} {y}";
 
                 var isOffset = (x % 2 == 0 && y % 2 != 0) || (x % 2 != 0 && y % 2 == 0);
-                spawnedTile.Init(isOffset);
+                spawnedTile.Init(isOffset);//adds checkard pattern
 
                 tiles[new Vector2(x, y)] = spawnedTile;
             }
         }
 
-        cam.transform.position = new Vector3((float)width / 2 - 0.5f, (float)height / 2 - 0.5f, -10);
+        cam.transform.position = new Vector3((float)width / 2 - 0.5f, (float)height / 2 - 0.5f, -10);//set camera view
     }
 
     public Tile GetTileAtPosition(Vector2 pos)
