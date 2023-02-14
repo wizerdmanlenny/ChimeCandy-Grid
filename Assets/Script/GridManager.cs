@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    [SerializeField] private int width, height;
+    [SerializeField] private int width, height;//x and y variables for graph
 
-    [SerializeField] private Tile tilePrefabs;
+    [SerializeField] private Tile tilePrefabs; //tile object
 
-    [SerializeField] private Transform cam;
+    [SerializeField] private Transform cam; //camera variable
 
-    private Dictionary<Vector2, Tile> tiles;
+    private Dictionary<Vector2, Tile> tiles; //tile dictionary
     private void Start()
     {
         GenerateGrid();
