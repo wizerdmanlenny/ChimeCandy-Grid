@@ -18,8 +18,8 @@ public class TemplateScript : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0)) //if left click
         {
-            Vector2 mouseRay = Camera.main.ScreenToWorldPoint(transform.position);
-            RaycastHit2D rayHit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, allTilesLayer); //what did i hit with my mouse? mousePos seems to work but not mouseRay, odd
+            
+            RaycastHit2D rayHit = Physics2D.Raycast(transform.position, Vector2.zero, Mathf.Infinity, allTilesLayer); //what did i hit with my mouse? mousePos seems to work but not mouseRay, odd
 
             if (rayHit.collider == null) //if i hit nothing
             {

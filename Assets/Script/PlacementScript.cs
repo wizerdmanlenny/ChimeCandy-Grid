@@ -31,5 +31,24 @@ public class PlacementScript : MonoBehaviour
             isAnObjectSelected = false;
             selectedObjectInArray = 0;
         }
+        /* When we have more than one sprite
+         * if (Input.GetAxis("Mouse ScrollWheel") > 0 && isAnObjectSelected == true) {
+         *     selectedObjectInArray++;
+         *     
+         *     if (selectedObjectInArray > selectableObjects.Length - 1) {
+         *        selectedObjectInArray = 0;
+         *     }
+         *     Destroy(currentlySelectedObject);
+         *     currentlySelectedObject = (GameObject)Instantiate(selectableObjects[selectedObjectInArray], spawnPos, Quaternion.identity);
+         * } else if (Input.GetAxis("Mouse ScrollWheel") < 0 && isAnObjectSelected == true) {
+         *     selectedObjectInArray--;
+         *     
+         *     if (selectedObjectInArray < 0) {
+         *        selectedObjectInArray = selectableObjects.Length - 1;
+         *     }
+         *     Destroy(currentlySelectedObject);
+         *     currentlySelectedObject = (GameObject)Instantiate(selectableObjects[selectedObjectInArray], spawnPos, Quaternion.identity);
+         * }
+         */
     }
 }
