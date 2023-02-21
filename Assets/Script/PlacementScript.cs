@@ -25,5 +25,11 @@ public class PlacementScript : MonoBehaviour
             currentlySelectedObject = (GameObject)Instantiate(selectableObjects[selectedObjectInArray], spawnPos, Quaternion.identity); //instantiating a game object and making a reference to it
             isAnObjectSelected = true;
         }
+
+        if (Input.GetMouseButtonDown(1) && isAnObjectSelected == true) {
+            Destroy(currentlySelectedObject);
+            isAnObjectSelected = false;
+            selectedObjectInArray = 0;
+        }
     }
 }
