@@ -9,6 +9,7 @@ public class GridManager : MonoBehaviour
     [SerializeField] private Tile tilePrefabs;//variable for tile holder
 
     [SerializeField] private Transform cam;//variable for camera
+    
 
     private Dictionary<Vector2, Tile> tiles;//gets tile x and y
     private void Start()//activate on start
