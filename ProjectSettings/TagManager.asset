@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NoteTile
   - NoteTemplate
+  - FTop
   layers:
   - Default
   - TransparentFX
