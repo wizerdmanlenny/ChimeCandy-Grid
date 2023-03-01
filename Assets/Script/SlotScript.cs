@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SlotScript : MonoBehaviour
 {
-    /*
+    
     [SerializeField] private AudioSource noteSound;
     public void Placed()
     {
@@ -15,5 +15,5 @@ public class SlotScript : MonoBehaviour
     {
         Debug.Log("Hit");
     }
-    */
+    
 }

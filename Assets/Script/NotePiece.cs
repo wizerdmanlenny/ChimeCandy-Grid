@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NotePiece : MonoBehaviour
 {
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip pickupClip, dropClip;
     [SerializeField] private SpriteRenderer _renderer;
     private bool dragging, placed;
 
@@ -30,6 +32,7 @@ public class NotePiece : MonoBehaviour
     void OnMouseDown()
     {
         dragging = true;
+        source.PlayOneShot(pickupClip);
         offset = GetMousePos() - (Vector2)transform.position;
     }
 
@@ -40,6 +43,7 @@ public class NotePiece : MonoBehaviour
             transform.position = slot.transform.position;
             slot.Placed();
             placed = true;
+            source.PlayOneShot(dropClip);
         }
         else
         {
