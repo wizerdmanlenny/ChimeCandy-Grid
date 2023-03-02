@@ -9,14 +9,15 @@ public class NoteSlot : MonoBehaviour
     public void Placed()
     {
         noteSound.Play();
-        DelayAction(5);
+        Invoke("ChangeScene", 2.0f);
     }
 
-    IEnumerator DelayAction(float delayTime)
+    public void ChangeScene()
     {
-        //Wait for the specified delay time before continuing.
-        yield return new WaitForSeconds(delayTime);
-
-        //Do the action after the delay time has finished.
+        if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+            
     }
 }

@@ -7,6 +7,7 @@ public class NotePiece : MonoBehaviour
     //[SerializeField] private AudioSource source;
     //[SerializeField] private AudioClip pickupClip, dropClip;
     [SerializeField] private SpriteRenderer _renderer;
+    [SerializeField] private Sprite newSprite;
     private bool dragging, placed;
 
     private Vector2 offset, originalPos;
@@ -42,6 +43,7 @@ public class NotePiece : MonoBehaviour
         {
             transform.position = slot.transform.position;
             slot.Placed();
+            _renderer.sprite = newSprite;
             placed = true;
             //source.PlayOneShot(dropClip);
         }

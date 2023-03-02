@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FreeCreate.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DragnDropA.unity
+    guid: 5bbf7fedf0f0ac747beed1b98a678f56
+  - enabled: 1
+    path: Assets/Scenes/DragnDropB.unity
+    guid: 499539207726a2f44a836911d139c72e
   m_configObjects: {}
