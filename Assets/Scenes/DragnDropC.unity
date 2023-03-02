@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4c9fb8acb016a4a9016a82642f3daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotPrefabs: {fileID: 3282256103408824785, guid: 2ce02a3d7a6402a47be146ef8820d2e9, type: 3}
+  slotPrefabs: {fileID: 3282256103408824785, guid: 069c7b5ea4be600499a8b356d7931cb7, type: 3}
   slotParent: {fileID: 123245660}
   pieceParent: {fileID: 1871921378}
   piecePrefab: {fileID: 3292265042587099207, guid: 9a65ce8cce6e9054b8bae37114a1752b, type: 3}
@@ -629,7 +629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832507179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.44, y: 0, z: 0}
+  m_LocalPosition: {x: 8.39, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
