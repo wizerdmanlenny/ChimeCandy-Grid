@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c53fea4b3d3f56a44bbeaada6999ac4a, type: 3}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0.5176471}
+  m_Sprite: {fileID: 21300000, guid: 1acc96f1b10591340b2b2dd7127f713f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -110,7 +110,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b35e0ac81ddd4d1289aeb98b10924912, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1ff5d2e0f00fd3b4087bb2d623a7a79a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
