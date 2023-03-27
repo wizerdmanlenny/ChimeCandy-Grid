@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
+<<<<<<< HEAD
     [SerializeField] private int width, height;//camera pov field
 
     [SerializeField] private Tile tilePrefabs;//variable for tile holder
@@ -13,6 +14,16 @@ public class GridManager : MonoBehaviour
 
     private Dictionary<Vector2, Tile> tiles;//gets tile x and y
     private void Start()//activate on start
+=======
+    [SerializeField] private int width, height;//x and y variables for graph
+
+    [SerializeField] private Tile tilePrefabs; //tile object
+
+    [SerializeField] private Transform cam; //camera variable
+
+    private Dictionary<Vector2, Tile> tiles; //tile dictionary
+    private void Start()
+>>>>>>> e6bbdfc4d74d89c9b9d6d63872fac189e12f6cea
     {
         GenerateGrid();
     }
